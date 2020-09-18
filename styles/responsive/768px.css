@@ -1,0 +1,115 @@
+@media only screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+        height: 70rem;
+        overflow: hidden;
+        background-image: url(../../images/hero.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+    .header--layout {
+        height: 60rem;
+        padding: 0;
+    }
+    .header--grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "info images";
+        height: 100%;
+    }
+    .header__info {
+        display: grid;
+        align-items: center;
+        grid-area: info;
+        text-align: left;
+        padding-right: 9rem;
+    }
+    .header__images {
+        grid-area: images;
+        position: relative;
+    }
+    .header__images__mockups {
+        position: absolute;
+        transform: none;
+        margin-left: 0;
+    }
+    .reasonsSection {
+        margin-top: -12rem;
+    }
+    .reason__image{
+        justify-content: left;
+    }
+    .reasonsSection__header {
+        text-align: left;
+    }
+    .reasonsSection__header--layout {
+        max-width: 40vw;
+    }
+    .reasonsSection__reasons--grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+    .reasonsSection--layout {
+        padding: 10rem 0;
+    }
+    .reasonsSection__reason {
+        text-align: left;
+        row-gap: 4rem;
+    }
+    .gallerrSection__fotos--grid{
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: calc(var(--layout-width)/2);
+    }
+    .gallerySection__image{
+        overflow: hidden;
+    }
+    .articlesSection__articles--grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+    .articlesSection--layout {
+        padding: 10rem 0;
+    }
+    .footer--grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "logo   logo   span actions" "navbar navbar span logos" "navbar navbar span rights";
+    }
+    .footer__logos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-area: logos;
+    }
+    .footer__logos__logo {
+        height: 20px;
+    }
+    .footer__nav {
+        display: grid;
+        align-items: center;
+        grid-area: navbar;
+    }
+    .footer__nav--grid {
+        grid-template-columns: auto auto;
+        column-gap: 5rem;
+    }
+    .footer__nav__option {
+        text-align: left;
+    }
+    .footer__nav__option a:hover {
+        color: var(--lime-green-b);
+    }
+    .footer__actions {
+        justify-content: center;
+        align-items: center;
+        grid-area: actions;
+    }
+    .footer__rights {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-area: rights;
+    }
+    .footer--layout {
+        max-width: var(--layout-width);
+        margin: auto;
+    }
+}

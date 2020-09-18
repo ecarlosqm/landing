@@ -1,0 +1,18 @@
+
+@media only screen and (min-width: 1440px) {
+    .topBar__menuButton {
+        display: none;
+    }
+    .reasonsSection__reasons--grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .articlesSection__articles--grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .footer--grid {
+        grid-template-columns: auto 1fr 200px auto;
+    }
+    .footer__nav--layout {
+        justify-content: center;
+    }
+}

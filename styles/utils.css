@@ -1,0 +1,13 @@
+.openMenu{
+    display: block !important;
+}
+
+.fixed{
+    position: fixed !important;
+}
+
+.floatingTopBar{
+    position: fixed !important;
+    height: 7rem !important;
+    box-shadow: 0 1px 5px rgb(179, 179, 179);
+}

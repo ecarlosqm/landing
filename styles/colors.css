@@ -1,0 +1,11 @@
+:root {
+    --dark-blue: rgb(45, 49, 77);
+    --lime-green: rgb(49, 211, 92);
+    --lime-green-b: rgb(42, 173, 123);
+    --bright-cyan: rgb(43, 183, 218);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: rgb(243, 244, 246);
+    --very-light-gray: rgb(250, 250, 250);
+    --white: #ffffff;
+    --main-gradient: linear-gradient(90deg, var(--lime-green) 0%, var(--bright-cyan) 100%);
+}

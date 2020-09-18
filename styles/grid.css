@@ -1,0 +1,26 @@
+:root{
+    --column-padding: 2.4rem;
+    --layout-width: calc(100vw - var(--column-padding)*3);
+}
+
+.mt-5{
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px){
+    :root{
+        --layout-width: 680px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    :root{
+        --layout-width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    :root{
+        --layout-width: 1100px;
+    }
+}

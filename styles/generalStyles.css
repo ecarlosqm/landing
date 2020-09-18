@@ -1,0 +1,87 @@
+@import 'colors.css';
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+
+h1{
+    color: rgb(var(--dark-blue));
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2{
+    color: rgb(var(--dark-blue));
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3{
+    color: rgb(var(--dark-blue));
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h4{
+    color: rgb(var(--dark-blue));
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+    margin: 0;
+}
+
+p{
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.container {
+    max-width: 330px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 20rem;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.btn-primary {
+    color: white;
+    background: var(--main-gradient);
+}
+
+.btn-primary:hover{
+    opacity: .7;
+}

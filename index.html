@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+
+  <title>Figment test</title>
+
+  <!-- FONTS -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- SCRIPTS -->
+
+  <script src="./js/index.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/topBar.js"></script>
+  <script src="./js/carrusel.js"></script>
+  <script src="./js/galleryViewer.js"></script>
+
+  <!-- STYLES -->
+
+  <link rel="stylesheet" href="./styles/carrusel.css">
+  <link rel="stylesheet" href="./styles/galleryViewer.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" media="only screen and (min-width: 768px)" href="./styles/responsive/768px.css">
+  <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="./styles/responsive/1024px.css">
+  <link rel="stylesheet" media="only screen and (min-width: 1440px)" href="./styles/responsive/1440px.css">
+
+
+</head>
+
+<body>
+
+  <header class="topBar" id="topBar">
+    <div class="topBar__nav--layout">
+      <nav class="topBar__nav">
+        <div class="topBar__nav--grid">
+          <figure class="topBar__logo">
+            <img src="./images/logo.svg" alt="">
+          </figure>
+          <button class="topBar__menuButton" id="menuButtn">
+            <img class="" src="./images/icon-hamburger.svg" alt="">
+          </button>
+          <div class="topBar__menu--layout" id="menu">
+            <ul class="topBar__menu">
+              <li class="topBar__menu__option--layout">
+                <div class="gradienBorder--workArround">
+                  <a class="topBar__menu__option" href="#home">Home</a>
+                </div>
+              </li>
+              <li class="topBar__menu__option--layout">
+                <div class="gradienBorder--workArround">
+                  <a class="topBar__menu__option" href="#reasons">Descubre</a>
+                </div>
+              </li>
+              <li class="topBar__menu__option--layout">
+                <div class="gradienBorder--workArround">
+                  <a class="topBar__menu__option" href="#gallery">Galería</a>
+                </div>
+              </li>
+              <li class="topBar__menu__option--layout">
+                <div class="gradienBorder--workArround">
+                  <a class="topBar__menu__option" href="#articles">Artículos</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="topBar__actions">
+            <a class="btn btn-primary" href="">Abrir una cuenta</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <header id="home" class="header">
+    <div class="header--layout">
+      <div class="header--grid">
+        <figure class="header__images">
+          <img class="header__images__mockups" src="./images/hero-image.svg" alt="">
+        </figure>
+        <div class="header__info">
+          <div class="header__info--grid">
+            <h1>La banca movil amigable</h1>
+            <p>Conectate y maneja tu dinero desde la app. Facil, rapido y seguro</p>
+            <div class="mt-5">
+              <a class="btn btn-primary" href="">Abrir una cuenta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="reasons" class="reasonsSection">
+    <div class="reasonsSection--layout">
+      <div class="reasonsSection--grid">
+        <header class="reasonsSection__header">
+          <div class="reasonsSection__header--layout">
+            <div class="reasonsSection__header--grid">
+              <h2>Características</h2>
+              <p>Estas son algunas de las caracteristicas que haran tu experiencia con nosotros unica.</p>
+            </div>
+          </div>
+        </header>
+        <div class="reasonsSection__reasons--grid">
+          <article class="reasonsSection__reason">
+            <figure class="reason__image">
+              <img src="./images/control.svg" alt="">
+            </figure>
+            <h3 class="reason__title">Toma el control</h3>
+            <p class="reason__description">Apaga y enciende tus tarjetas de crédito cuando lo necesites con tan solo un
+              boton</p>
+          </article>
+          <article class="reasonsSection__reason">
+            <figure class="reason__image">
+              <img src="./images/transferencias.svg" alt="">
+            </figure>
+            <h3 class="reason__title">Transferencas</h3>
+            <p class="reason__description">Haz transferencias a cualquier hora, todos los días del año, sin costo ni
+              comisiones</p>
+          </article>
+          <article class="reasonsSection__reason">
+            <figure class="reason__image">
+              <img src="./images/disponible.svg" alt="">
+            </figure>
+            <h3 class="reason__title">Facil de usar</h3>
+            <p class="reason__description">Pensada en el usuario y con altos estandares de edise;o de exoeriencia de
+              usuario</p>
+          </article>
+          <article class="reasonsSection__reason">
+            <figure class="reason__image">
+              <img src="./images/segura.svg" alt="">
+            </figure>
+            <h3 class="reason__title">Segura</h3>
+            <p class="reason__description">Todos los datos que ingresas y recibes se transmiten encriptados</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallerySection">
+    <div class="gallerySection--layout">
+      <div class="gallerySection--grid">
+
+        <header class="gallerySection__header">
+          <h2 class="animate__fadeInDown">Galería</h2>
+        </header>
+
+        <div id="gallery-photos" class="gallerrSection__fotos--grid">
+          <figure class="gallerySection__image">
+            <img data-image-id="1" src="./images/gallery1.jpg" alt="">
+            <div data-image-zoom="1" class="gallerySection__image__actions">
+              <img src="./images/icon-search.svg" alt="">
+            </div>
+          </figure>
+          <figure class="gallerySection__image">
+            <img data-image-id="2" src="./images/gallery2.jpg" alt="">
+            <div data-image-zoom="2" class="gallerySection__image__actions">
+              <img src="./images/icon-search.svg" alt="">
+            </div>
+          </figure>
+          <figure class="gallerySection__image">
+            <img  data-image-id="3" src="./images/gallery3.jpg" alt="">
+            <div data-image-zoom="3" class="gallerySection__image__actions">
+              <img src="./images/icon-search.svg" alt="">
+            </div>
+          </figure>
+          <figure class="gallerySection__image">
+            <img data-image-id="4" src="./images/gallery4.jpg" alt="">
+            <div data-image-zoom="4" class="gallerySection__image__actions">
+              <img data-image-zoom="4" src="./images/icon-search.svg" alt="">
+            </div>
+          </figure>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <section id="articles" class="articlesSection">
+    <div class="articlesSection--layout">
+      <div class="articlesSection--grid">
+        <header class="articlesSection__header">
+          <h2 class="animate__fadeInDown">Ultimos artículos</h2>
+        </header>
+
+        <div id="carrusel" class="carrusel">
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article1.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article2.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article3.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article4.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article5.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="articleSection__article">
+            <div class="articlesSection__article--grid">
+              <figure class="articleSection__article__image">
+                <img src="./images/article6.jpg" alt="">
+              </figure>
+              <div class="articlesSection__article__overview">
+                <div class="articlesSection__article__overview--layout">
+                  <div class="articlesSection__article__overview--grid">
+                    <address>Erasmo Carlos Mendoza Quiroz</address>
+                    <h4>Título de artículo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima cupiditate eos cumque
+                      perferendis, facere nulla repudiandae laudantium! Repudiandae tempora quis fuga temporibus ipsa
+                      accusamus hic sequi, blanditiis possimus exercitationem sunt!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer--layout">
+      <div class="footer--grid">
+        <div class="footer__logos">
+          <figure>
+            <a href="">
+              <img class="footer__logos__logo" src="./images/icon-facebook.svg" alt="">
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img class="footer__logos__logo" src="./images/icon-youtube.svg" alt="">
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img class="footer__logos__logo" src="./images/icon-twitter.svg" alt="">
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img class="footer__logos__logo" src="./images/icon-pinterest.svg" alt="">
+            </a>
+          </figure>
+          <figure>
+            <a href="">
+              <img class="footer__logos__logo" src="./images/icon-instagram.svg" alt="">
+            </a>
+          </figure>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav--layout">
+            <ul class="footer__nav--grid">
+              <li class="footer__nav__option">
+                <a href="">Nosotros</a>
+              </li>
+              <li class="footer__nav__option">
+                <a href="">Contáctanos</a>
+              </li>
+              <li class="footer__nav__option">
+                <a href="">Blog</a>
+              </li>
+              <li class="footer__nav__option">
+                <a href="">Carreras</a>
+              </li>
+              <li class="footer__nav__option">
+                <a href="">Soporte</a>
+              </li>
+              <li class="footer__nav__option">
+                <a href="">Politicas de privacidad</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__actions">
+          <a class="btn btn-primary" href="">Abrir una cuenta</a>
+        </div>
+        <spam class="footer__rights">
+          © Todos los derechos reservados
+        </spam>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

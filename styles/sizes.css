@@ -1,0 +1,11 @@
+:root{
+    --top-bar-height: 7rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    :root{
+        --top-bar-height: 9rem;
+    }
+
+}
