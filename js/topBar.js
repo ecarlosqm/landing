@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const topBar = document.getElementById("topBar");
 
     window.addEventListener('scroll', (e) => {
