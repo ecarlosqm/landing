@@ -10,7 +10,7 @@ const openMenu = (menu, menuButton, topBar) => {
     menu.classList.add('openMenu');
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     let isOpen = false;
     const menu = document.getElementById("menu");
     const menuButton = document.getElementById("menuButtn");
