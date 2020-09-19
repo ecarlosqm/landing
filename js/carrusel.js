@@ -1,6 +1,6 @@
 var carrusel;
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 
     let carruselId = null;
 

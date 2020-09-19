@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     const gallery = new GalleryViewer('gallery-photos');
     gallery.init();
 })
