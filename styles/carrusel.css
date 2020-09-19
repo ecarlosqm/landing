@@ -1,24 +1,37 @@
 .carrusel {
     max-width: 100%;
-    display: flex;
+    display: grid;
     overflow: hidden;
 }
 
-.carrusel>* {
-    min-width: 100%;
+.carruselFadeInRight{
+    animation-name: carruselFadeInRight;
+    animation-duration: 1s;
 }
 
-@media only screen and (min-width: 768px) {
-    .carrusel>* {
-        min-width: calc(50% - 1rem);
-        margin-right: 1rem;
+.carruselFadeInLeft{
+    animation-name: carruselFadeInLeft;
+    animation-duration: 1s;
+}
+
+@keyframes carruselFadeInRight{
+    from {
+        opacity: .2;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-
-@media only screen and (min-width: 1020px) {
-    .carrusel>* {
-        min-width: calc(25% - 2rem);
-        margin-right: 2rem;
+@keyframes carruselFadeInLeft{
+    from {
+        opacity: .2;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
     }
 }
