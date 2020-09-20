@@ -14,7 +14,7 @@ class GalleryViewer {
 
     init() {
         this.getImages();
-        this.getControls()
+        this.getControls();
     }
 
     getImages() {

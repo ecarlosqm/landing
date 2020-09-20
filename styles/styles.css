@@ -190,6 +190,9 @@
 }
 
 .gallerySection__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -212,11 +215,8 @@
 }
 
 .gallerySection__image>img {
-    position: absolute;
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% * 2);
+    position: relative;
+    width: calc(100% * 1.8);
 }
 
 .gallerySection__image:hover .gallerySection__image__actions{
@@ -273,8 +273,9 @@
 }
 
 .articleSection__article__image img {
-    width: 100%;
-    display: block;
+    width: 120%;
+    display: relative;
+    margin-left: -10%;
     overflow: hidden;
 }
 
